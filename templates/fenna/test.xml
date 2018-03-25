@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.97541881010865496641925646048478361564" name="TEST" authors="TEST" version="1.0" creationDate="2011-11-02" description="TEST Template for ranking and boolean" xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.277966053183513676512857625329869128489" name="TEST" authors="kirbyju" version="1.0" creationDate="2011-11-09" description="TCGA Breast Research Team" modality="CT" codeMeaning="TCGA-BRCA CRF" codeValue="99PRI_TC_28A83" codingSchemeDesignator="99PRI_TemplateCode" codingSchemeVersion="1.0">
+      <Component label="Breast Observations" itemNumber="0" authors="kirbyju" minCardinality="1" maxCardinality="1" shouldDisplay="false" id="2.25.6371214520422.1900260149731.140556397724">
+         <AnatomicEntity annotatorConfidence="false">
+            <AnatomicEntityCharacteristic label="Fibro-glandular Tissue (FGT)" itemNumber="0" authors="kirbyju" minCardinality="1" maxCardinality="1" shouldDisplay="true" id="2.25.6371214521243.1900260150552.140556397755" annotatorConfidence="false">
+               <AllowedTerm codeValue="99-02834RA" codeMeaning="A numerical rating" codingSchemeDesignator="99Privt" codingSchemeVersion="1.0">
+                  <CharacteristicQuantification name="Rating 1-12" annotatorConfidence="false" characteristicQuantificationIndex="0">
+                     <Numerical value="0.0" ucumString="Not Applicable" valueLabel="Enter a rating from 1 to 12" valueDescription="Rating" askForInput="true"/>
+                     <Numerical value="1.0" ucumString="Not applicable" askForInput="false"/>
+                     <Numerical value="2.0" ucumString="Not applicable" askForInput="false"/>
+                  </CharacteristicQuantification>
+               </AllowedTerm>
+            </AnatomicEntityCharacteristic>
+            <AnatomicEntityCharacteristic label="Multifocal (&lt;= 4cm)" itemNumber="1" authors="kirbyju" minCardinality="1" maxCardinality="1" shouldDisplay="true" id="2.25.6371214522905.1900260152214.140556397817" annotatorConfidence="false">
+               <AllowedTerm codeValue="C49488" codeMeaning="Yes" codingSchemeDesignator="NCIT"/>
+               <AllowedTerm codeValue="C49487" codeMeaning="No" codingSchemeDesignator="NCIT"/>
+            </AnatomicEntityCharacteristic>
+         </AnatomicEntity>
+         <AllowedTerm codeValue="C12971" codeMeaning="Breast" codingSchemeDesignator="NCIT"/>
+      </Component>
+   </Template>
+</TemplateContainer>

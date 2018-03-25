@@ -1,0 +1,38 @@
+  <!DOCTYPE html>
+
+<html>
+<body>
+
+<div id="accordion2" class="ui container" >
+	<select name = "a" id="gender-select" class="ui fluid multiple selection dropdown">
+		<option value="a">a</option>
+		<option value="b">b</option>
+		<option value="c">c</option>
+		<option value="d">d</option>
+
+	</select>
+		
+</div>
+
+
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="parse.js"></script>
+      <link rel="stylesheet" href="semantic/semantic.min.css"/>
+   
+    <script src="semantic/semantic.min.js"></script>
+   
+    <script>
+    	
+    	$('.accordion1')
+  .accordion({
+    selector: {
+      trigger: '.title .icon'
+    }
+  })
+;
+$('#gender-select').dropdown();
+
+    </script>

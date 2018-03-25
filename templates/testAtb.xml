@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.68968686481087010364024689426008809524" name="test" authors="Default User" version="t" creationDate="2015-10-29" description="t" xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.314744059417011672865479827343078283771" name="test" authors="Default User" version="1" creationDate="2015-10-29" description="testing quantile" codeMeaning="Test template" codeValue="99PRI_TT_A0489" codingSchemeDesignator="99PRI_TemplateCode" codingSchemeVersion="1.0">
+      <Component label="signal distribution" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.113683486575647875905743373916564983448">
+         <ImagingObservation annotatorConfidence="false">
+            <ImagingObservationCharacteristic label="Distribution" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.101552613091723278884498437798150642800" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID5958" codeMeaning="distribution pattern" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0">
+                  <CharacteristicQuantification name="indicate values" annotatorConfidence="false" characteristicQuantificationIndex="0">
+                     <Quantile minValue="0.0" maxValue="1000.0" bins="5" defaultBin="5"/>
+                  </CharacteristicQuantification>
+               </AllowedTerm>
+            </ImagingObservationCharacteristic>
+         </ImagingObservation>
+         <AllowedTerm codeValue="RID5958" codeMeaning="distribution pattern" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+      </Component>
+   </Template>
+</TemplateContainer>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.314979511266804042753445020815915384222" name="HI-RADS" authors="Joshua Reicher, Daniel Rubin, Max Wintermark" version="1.0" creationDate="2014-05-08" description="Section for the HI-RADS template." xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.431086808846631822872686337266426442" name="HI-RADS" authors="Default User" version="1.0" creationDate="2014-05-08" description="Head injury template" codeValue="HIRADS-00006" codeMeaning="HIRADSQuestions" codingSchemeDesignator="HIRADS" codingSchemeVersion="">
+      <Component label="Any abnormality?" itemNumber="0" authors="Default User" explanatoryText="Normal versus abnormal" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.92528516994983014975080985490502839074">
+         <QuestionType codeValue="HIRADS-00006A" codeMeaning="Are there any abnormalities?" codingSchemeDesignator="HIRADS" codingSchemeVersion=""/>
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="HIRADS-00004" codeMeaning="AbnormaltiesPresent" codingSchemeDesignator="HIRADS" codingSchemeVersion=""/>
+         <AllowedTerm codeValue="HIRADS-00005" codeMeaning="AbnormalitiesAbsent" codingSchemeDesignator="HIRADS" codingSchemeVersion="" noMoreQuestions="true"/>
+      </Component>
+      <Component label="LesionPathology" itemNumber="1" authors="Default User" explanatoryText="" minCardinality="0" maxCardinality="0" shouldDisplay="false" groupLabel="" id="2.25.233606034989558816243942074090623000744">
+         <ImagingObservation annotatorConfidence="false">
+            <ImagingObservationCharacteristic label="FractureLaterality" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="0" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.157277143189430389487525690908180651362" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID46054" codeMeaning="left side" codingSchemeDesignator="RadLex3.10_NS" codingSchemeVersion=""/>
+               <AllowedTerm codeValue="RID46055" codeMeaning="right side" codingSchemeDesignator="RadLex3.10_NS"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="FractureType" itemNumber="1" authors="Default User" explanatoryText="" minCardinality="0" maxCardinality="3" shouldDisplay="true" groupLabel="" id="2.25.5735647123795655816019312831464843221" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID4650" codeMeaning="fracture" codingSchemeDesignator="RadLex3.10_NS" codingSchemeVersion="">
+                  <ValidTerm codeValue="RID5811" codeMeaning="linear" codingSchemeDesignator="RadLex3.10_NS"/>
+               </AllowedTerm>
+               <AllowedTerm codeValue="RID6344" codeMeaning="depression fracture" codingSchemeDesignator="RadLex3.10_NS" codingSchemeVersion=""/>
+               <AllowedTerm codeValue="RID4650" codeMeaning="fracture" codingSchemeDesignator="RadLex3.10_NS" codingSchemeVersion="">
+                  <ValidTerm codeValue="RID5757" codeMeaning="complex" codingSchemeDesignator="RadLex3.10_NS"/>
+               </AllowedTerm>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="HematomaLaterality" itemNumber="2" authors="Default User" explanatoryText="" minCardinality="0" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.130456233589176973648472352328340032092" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID46055" codeMeaning="right side" codingSchemeDesignator="RadLex3.10_NS"/>
+               <AllowedTerm codeValue="RID46054" codeMeaning="left side" codingSchemeDesignator="RadLex3.10_NS"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="HematomaThickness" itemNumber="3" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.332604812383123939056378817459679571682" annotatorConfidence="false">
+               <AllowedTerm codeValue="HIRADS-00007A" codeMeaning="LessThan5mm" codingSchemeDesignator="HIRADS" codingSchemeVersion="" defaultAnswer="true"/>
+               <AllowedTerm codeValue="HIRADS-00007B" codeMeaning="5-10mm" codingSchemeDesignator="HIRADS"/>
+               <AllowedTerm codeValue="HIRADS-00007C" codeMeaning="11-15mm" codingSchemeDesignator="HIRADS"/>
+               <AllowedTerm codeValue="HIRADS-00007D" codeMeaning="GreaterThan15mm" codingSchemeDesignator="HIRADS"/>
+            </ImagingObservationCharacteristic>
+         </ImagingObservation>
+         <AllowedTerm codeValue="RID46056" codeMeaning="not applicable" codingSchemeDesignator="RadLex3.10_NS" codingSchemeVersion=""/>
+      </Component>
+   </Template>
+</TemplateContainer>

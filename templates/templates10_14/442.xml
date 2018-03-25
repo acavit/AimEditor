@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.962863181400068832023405445834933253" name="cavit template try" authors="cavit" version="1" creationDate="2015-04-07" description="double template any closed shape and roi only" xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.158009446295858919844005670982612161979.3" name="Any Closed Shape TemplateAny" authors="Daniel Rubin" version="1.1" creationDate="2014-10-24" description="Template used for collecting only ROIs" codingSchemeDesignator="RECIST" codingSchemeVersion="1.0" codeMeaning="Any_Closed_Shape" codeValue="AnyClosedShape">
+      <Component label="Closed shape" itemNumber="0" authors="Daniel Rubin" explanatoryText="Draw a shape" minCardinality="1" maxCardinality="4" shouldDisplay="true" groupLabel="" id="2.25.7139485201281.2147918892020.145090474711">
+         <GeometricShape noMoreQuestions="true">MultiPoint</GeometricShape>
+      </Component>
+   </Template>
+   <Template uid="2.25.158009446295858919844005670982612161979" name="ROIOnly" authors="amsnyder" version="1.1" creationDate="2011-11-16" description="Template used for collecting only ROIs" codingSchemeDesignator="RECIST" codingSchemeVersion="1.0" codeMeaning="ROI Only" codeValue="ROI">
+      <Component label="Geomtric shape" itemNumber="0" authors="Daniel Rubin" explanatoryText="plugin geometric shape correction" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.1210608360247.368016275669.58943005348">
+         <GeometricShape>Point</GeometricShape>
+      </Component>
+   </Template>
+</TemplateContainer>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.28562297725401196614835642392116223596" name="ICR_CT_radiogenomics" authors="Default User" version="1" creationDate="2015-10-20" description="Annotation scheme" xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.76565494626598479787841469014723646183" name="ICR_CT_radiogenomics" authors="Default User" version="1" creationDate="2015-10-20" description="CT annotation scheme radiogenomics study" modality="MR" codeMeaning="Test template" codeValue="99PRI_TT_A0489" codingSchemeDesignator="99PRI_TemplateCode" codingSchemeVersion="1.0">
+      <Component label="Organ metastatis" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.279591499620333721096016654433435107061">
+         <AnatomicEntity annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID58" codeMeaning="liver" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="O" codeMeaning="other" codingSchemeDesignator="BI-RADS" codingSchemeVersion="1" nextId="2.25.155360494582146501383257804093363897486"/>
+         <AllowedTerm codeValue="RID28847" codeMeaning="lymph node group" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0" nextId="2.25.296432906584623443253705747740988114582"/>
+         <AllowedTerm codeValue="RID1301" codeMeaning="lung" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0" nextId="2.25.296432906584623443253705747740988114582"/>
+         <AllowedTerm codeValue="RID13197" codeMeaning="bone organ" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0" nextId="2.25.77647084592229664979307135294565029553"/>
+      </Component>
+      <Component label="Presence enhancing rim" itemNumber="1" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.47103924341160077849804248400422220444">
+         <ImagingObservation annotatorConfidence="false">
+            <ImagingObservationCharacteristic label="Rim thickness" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.291024229037559762287036398015079550714" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID28671" codeMeaning="thickness" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0">
+                  <CharacteristicQuantification name="Rim thickness" annotatorConfidence="false" characteristicQuantificationIndex="0">
+                     <Interval minValue="0.0" maxValue="1.0" minOperator="Equal" maxOperator="LessThan" ucumString="mm" askForInput="false" valueLabel="0.0-1.0"/>
+                     <Interval minValue="1.0" maxValue="2.0" minOperator="Equal" maxOperator="LessThanEqual" ucumString="mm" askForInput="false" valueLabel="1.0-2.0"/>
+                     <Interval minValue="2.0" maxValue="5.0" minOperator="Equal" maxOperator="Equal" ucumString="mm" askForInput="false" valueLabel="2.0-5.0"/>
+                  </CharacteristicQuantification>
+               </AllowedTerm>
+               <AllowedTerm codeValue="RID28454" codeMeaning="none" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0" defaultAnswer="true"/>
+            </ImagingObservationCharacteristic>
+         </ImagingObservation>
+         <AllowedTerm codeValue="RID28474" codeMeaning="yes" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID28475" codeMeaning="no" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0" defaultAnswer="true" nextId="2.25.335176668954086032488574450276259040241"/>
+      </Component>
+      <Component label="Enhancement centre of the metastasis" itemNumber="2" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.335176668954086032488574450276259040241">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID6056" codeMeaning="nonenhancing" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID6057" codeMeaning="isoenhancing" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID6060" codeMeaning="heterogeneous" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID28454" codeMeaning="none" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0" defaultAnswer="true"/>
+      </Component>
+      <Component label="Lesion characteristic" itemNumber="3" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.77647084592229664979307135294565029553">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID45723" codeMeaning="Mixed lytic and sclerotic" codingSchemeDesignator="RadLex" codingSchemeVersion="" nextId="2.25.155360494582146501383257804093363897486"/>
+         <AllowedTerm codeValue="RID45724" codeMeaning="Sclerotic" codingSchemeDesignator="RadLex" codingSchemeVersion="" nextId="2.25.155360494582146501383257804093363897486"/>
+         <AllowedTerm codeValue="RID45729" codeMeaning="Lytic" codingSchemeDesignator="RadLex" codingSchemeVersion="" nextId="2.25.155360494582146501383257804093363897486"/>
+         <AllowedTerm codeValue="RID28454" codeMeaning="none" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0" defaultAnswer="true"/>
+      </Component>
+      <Component label="Enhancement" itemNumber="4" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.296432906584623443253705747740988114582">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID34303" codeMeaning="rim enhancement" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID6057" codeMeaning="isoenhancing" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID6056" codeMeaning="nonenhancing" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID28454" codeMeaning="none" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0" defaultAnswer="true"/>
+      </Component>
+      <Component label="Border" itemNumber="5" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.155360494582146501383257804093363897486">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID34283" codeMeaning="indistinct" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="D" codeMeaning="distinct" codingSchemeDesignator="BI-RADS" codingSchemeVersion="1"/>
+      </Component>
+      <Component label="Margin" itemNumber="6" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.19310391339520553604717856101879916622">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID5714" codeMeaning="smooth margin" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID5713" codeMeaning="spiculated margin" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID5715" codeMeaning="irregular margin" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+      </Component>
+      <Component label="ROI" itemNumber="7" authors="" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.13035360080519322159927308420110191317">
+         <GeometricShape>Polyline</GeometricShape>
+      </Component>
+      <Component label="Longest diameter" itemNumber="8" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.218134959725271713709192803824552612876">
+         <GeometricShape>MultiPoint</GeometricShape>
+      </Component>
+   </Template>
+</TemplateContainer>

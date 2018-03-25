@@ -1,0 +1,57 @@
+  <!DOCTYPE html>
+
+<html>
+<head>
+   
+      <style type = "text/css" media = "all">
+
+         .mylbl{
+            color: maroon;
+            margin-left: 40px;
+         }
+      </style>
+
+</head>
+<body>
+  <div id="shape">
+      <div>
+     <button type="button" onclick="checkAll();">Click Me!</button> 
+  </div>
+
+  </div>
+<div id="accordion1" class="accordion1" style="background-color: white; width:400px;">
+
+	
+</div>
+<div id="accordion2" class="ui container" ></div>
+
+
+</body>
+
+</html>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="parse.js"></script>
+      <link rel="stylesheet" href="semantic/semantic.css"/>
+       <link rel="stylesheet" href="semantic/UI-Icon-master/icon.css"/>
+    <script src="semantic/semantic.js"></script>
+
+   
+    <script>
+    	
+    	$('.accordion1')
+  .accordion({
+    selector: {
+      trigger: '.title'
+    }
+  })
+;
+
+
+
+   $('select[id^="select"]').dropdown();
+
+$('#selectF1AnatomicCenter').dropdown('setting', 'onChange', function(value){console.log(value);});
+   $("#selectF3FunctionalBrainatRiskofResection").dropdown();
+
+    </script>

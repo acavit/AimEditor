@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+
+<html>
+<body>
+
+<div  class="ui container" >
+	<select id="0" class="ui fluid multiple selection dropdown">
+		<option value=""></option>
+		<option value="a">a</option>
+		<option value="b">b</option>
+		<option value="c">c</option>
+		<option value="d">d</option>
+
+	</select>
+		
+</div>
+
+<div  class="ui container" >
+	<select id="1" class="ui fluid multiple selection dropdown">
+		<option value=""></option>
+		<option value="f">5</option>
+		<option value="g">6</option>
+		<option value="o">7</option>
+		<option value="p">8</option>
+
+	</select>
+		
+</div>
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="parse.js"></script>
+      <link rel="stylesheet" href="semantic/semantic.min.css"/>
+   
+    <script src="semantic/semantic.min.js"></script>
+   
+    <script>
+    	
+    	$('.accordion1')
+  .accordion({
+    selector: {
+      trigger: '.title .icon'
+    }
+  })
+;
+
+$('#0').dropdown();
+$('#1').dropdown();
+
+    </script>

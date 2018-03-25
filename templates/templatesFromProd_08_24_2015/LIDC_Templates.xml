@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.3996559650141.1194316969797.204033480008" name="VK Template" authors="The AIM team" version="1" creationDate="2011-07-10" description="This template is used by an application program to present readers and adjudicators with available option for evaluating lung tumor studies." xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.3996559650658.1194316970315.204033480053" name="LIDC_CR_DR" authors="AIM Team" version="1.0" creationDate="2010-02-15" description="This is a LIDC template version 2 revision 22." modality="CR" precedingAnnotation="DoNotOffer" codeMeaning="Lung Tumor Measurement CR DR" codeValue="LIDC-2" codingSchemeDesignator="Private_LIDC">
+      <Component label="Tumor Location" itemNumber="1" authors="" explanatoryText="Location of lesion geographic center." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.3996559651177.1194316970834.204033480098">
+         <QuestionType codeValue="WTL-100" codeMeaning="Where is the tumor location?" codingSchemeDesignator="Private"/>
+         <AnatomicEntity annotatorConfidence="true">
+            <AnatomicEntityCharacteristic label="Side of Tumor Center" itemNumber="1" explanatoryText="Side of lesion center only" minCardinality="1" maxCardinality="1" shouldDisplay="true" id="2.25.3996559651697.1194316971354.204033480143" annotatorConfidence="false">
+               <AllowedTerm codeValue="G-A100" codeMeaning="Right" codingSchemeDesignator="SRT"/>
+               <AllowedTerm codeValue="G-A101" codeMeaning="Left" codingSchemeDesignator="SRT"/>
+               <QuestionType codeValue="PRTC1" codeMeaning="Where is the side of tumor center?" codingSchemeDesignator="Private"/>
+            </AnatomicEntityCharacteristic>
+         </AnatomicEntity>
+         <AllowedTerm codeValue="RID1327" codeMeaning="Upper lobe of left lung" codingSchemeDesignator="RadLex"/>
+         <AllowedTerm codeValue="RID1315" codeMeaning="Lower lobe of left lung" codingSchemeDesignator="RadLex"/>
+         <AllowedTerm codeValue="RID1310" codeMeaning="Middle lobe of right lung" codingSchemeDesignator="RadLex"/>
+         <AllowedTerm codeValue="RID1303" codeMeaning="Upper lobe of right lung" codingSchemeDesignator="RadLex"/>
+         <AllowedTerm codeValue="RadLex" codeMeaning="Lower lobe of left lung" codingSchemeDesignator="RID1338"/>
+      </Component>
+      <Component label="Lesion" itemNumber="2" authors="" explanatoryText="Select the type of lesion" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Component Label 1" id="2.25.3996559652219.1194316971876.204033480188">
+         <QuestionType codeValue="PRLS1" codeMeaning="What is the type of lesion?" codingSchemeDesignator="Private"/>
+         <ImagingObservation annotatorConfidence="true">
+            <ImagingObservationCharacteristic label="Morphologic characteristic" itemNumber="1" explanatoryText=" " minCardinality="1" maxCardinality="1" shouldDisplay="true" id="2.25.3996559652742.1194316972399.204033480233" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID5803" codeMeaning="Micronodular" codingSchemeDesignator="RadLex">
+                  <CharacteristicQuantification name="Characteristic Quantification" annotatorConfidence="false" characteristicQuantificationIndex="1">
+                     <NonQuantifiable codeValue="R-40775" codeMeaning="None" codingSchemeDesignator="SRT"/>
+                     <NonQuantifiable codeValue="C48658" codeMeaning="Indeterminate" codingSchemeDesignator="NCI"/>
+                  </CharacteristicQuantification>
+               </AllowedTerm>
+               <AllowedTerm codeValue="RID5804" codeMeaning="Macronodular" codingSchemeDesignator="RadLex">
+                  <CharacteristicQuantification name="Enhancement Quality Characteristic Quantification" annotatorConfidence="false" characteristicQuantificationIndex="1">
+                     <NonQuantifiable codeValue="R-40775" codeMeaning="None" codingSchemeDesignator="SRT"/>
+                     <NonQuantifiable codeValue="R-404FA" codeMeaning="Mild" codingSchemeDesignator="SRT"/>
+                  </CharacteristicQuantification>
+               </AllowedTerm>
+               <QuestionType codeValue="PRLS1" codeMeaning="What is the type of lesion?" codingSchemeDesignator="Private"/>
+            </ImagingObservationCharacteristic>
+         </ImagingObservation>
+         <AllowedTerm codeValue="RID3874" codeMeaning="mass" codingSchemeDesignator="RadLex"/>
+      </Component>
+      <Tags>
+         <Tag>
+            <TagName codeValue="64572001" codeMeaning="Disease" codingSchemeDesignator="SRT"/>
+            <TagValue>
+               <CodedValue codeValue="C4878" codeMeaning="Lung Carcinoma" codingSchemeDesignator="NCIt"/>
+            </TagValue>
+         </Tag>
+         <Tag>
+            <TagName codeValue="64572001" codeMeaning="Disease" codingSchemeDesignator="SRT"/>
+            <TagValue>
+               <CodedValue codeValue="R-F344B" codeMeaning="Suspected lung cancer" codingSchemeDesignator="SRT"/>
+            </TagValue>
+         </Tag>
+      </Tags>
+   </Template>
+   <Template uid="2.25.3996559653266.1194316972923.204033480278" name="LIDC CT" authors="AIM Team" version="1.1" creationDate="2011-07-10" description="This is a LIDC template version 2 revision 23." modality="CT" precedingAnnotation="RequireToSelect" codeMeaning="Lung Tumor Measurement CT" codeValue="LIDC-1" codingSchemeDesignator="LIDC">
+      <Component label="Tumor Location" itemNumber="1" explanatoryText="Location of lesion geographic center (not all areas of involvement)." minCardinality="0" maxCardinality="1" shouldDisplay="true" id="2.25.3996559653791.1194316973449.204033480323">
+         <QuestionType codeValue="WTL-100" codeMeaning="Where is the tumor location?" codingSchemeDesignator="Private"/>
+         <AnatomicEntity annotatorConfidence="true">
+            <AnatomicEntityCharacteristic label="Side of Tumor Center" itemNumber="1" explanatoryText="Side of lesion center" minCardinality="1" maxCardinality="1" shouldDisplay="true" id="2.25.3996559654318.1194316973976.204033480368" annotatorConfidence="false">
+               <AllowedTerm codeValue="G-A100" codeMeaning="Right" codingSchemeDesignator="SRT"/>
+               <AllowedTerm codeValue="G-A101" codeMeaning="Left" codingSchemeDesignator="SRT"/>
+            </AnatomicEntityCharacteristic>
+         </AnatomicEntity>
+         <AllowedTerm codeValue="RID1327" codeMeaning="Upper lobe of left lung" codingSchemeDesignator="RadLex"/>
+         <AllowedTerm codeValue="RID1303" codeMeaning="Upper lobe of right lung" codingSchemeDesignator="RadLex"/>
+         <AllowedTerm codeValue="RadLex" codeMeaning="Lower lobe of left lung" codingSchemeDesignator="RID1338"/>
+      </Component>
+      <Component label="Arrow" itemNumber="2" authors="The AIM Team" explanatoryText="Please put an arrow to identify the tumor location." minCardinality="0" maxCardinality="1" shouldDisplay="true" groupLabel="Creating an arrow " id="2.25.3996559654846.1194316974504.204033480413">
+         <QuestionType codeValue="PA1" codeMeaning="Place an arrow an a tumor" codingSchemeDesignator="Private"/>
+         <GeometricShape>Point</GeometricShape>
+      </Component>
+      <Component label="RECIST Calculation" itemNumber="7" minCardinality="0" maxCardinality="1" shouldDisplay="true" id="2.25.3996559655375.1194316975034.204033480458">
+         <QuestionType codeValue="PRCAL1" codeMeaning="Perform RECIST calculation " codingSchemeDesignator="Private"/>
+         <Calculation>
+            <CalculationType codeValue="REC-C" codeMeaning="RECIST Calculation" codingSchemeDesignator="Private-RECIST">
+               <ValidTerm codeValue="REC-C-1.0" codeMeaning="RECIST 1.0" codingSchemeDesignator="Private-RECIST"/>
+               <ValidTerm codeValue="REC-C-1.1" codeMeaning="RECIST 1.1" codingSchemeDesignator="Private-RECIST"/>
+               <AlgorithmType codeValue="REC-LD-0264" codeMeaning="Longest Diameter" codingSchemeDesignator="Private-RECIST" description="Calculation the logest diameter of a lesion." uniqueIdentifier="7880.3455756.67856.343412.13567" algorithmName="Longest Diameter for Recist" algorithmVersion="1.0"/>
+            </CalculationType>
+         </Calculation>
+      </Component>
+      <Tags>
+         <Tag>
+            <TagName codeValue="64572001" codeMeaning="Disease" codingSchemeDesignator="SRT"/>
+            <TagValue>
+               <CodedValue codeValue="C4878" codeMeaning="Lung Carcinoma" codingSchemeDesignator="NCIt"/>
+            </TagValue>
+         </Tag>
+         <Tag>
+            <TagName codeValue="C32221" codeMeaning="Body Part" codingSchemeDesignator="NCI"/>
+            <TagValue>
+               <CodedValue codeValue="C12468" codeMeaning="Lung" codingSchemeDesignator="NCI"/>
+            </TagValue>
+         </Tag>
+      </Tags>
+   </Template>
+</TemplateContainer>

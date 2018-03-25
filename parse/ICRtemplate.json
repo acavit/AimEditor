@@ -1,0 +1,1463 @@
+{
+   "uid": "2.25.20996590218409948140861027149860784979",
+   "name": "ICR-radiogenomics",
+   "authors": "Default User",
+   "version": "1",
+   "creationDate": "2015-10-12",
+   "description": "Template used for radiogenomics project",
+   "schemaLocation": "gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd",
+   "Template": {
+      "uid": "2.25.175712358270214770610308695401050481266",
+      "name": "ICR-radiogenomics",
+      "authors": "Default User",
+      "version": "1",
+      "creationDate": "2015-10-12",
+      "description": "Template used for radiogenomics project at ICR",
+      "codeMeaning": "Test template",
+      "codeValue": "99PRI_TT_A0489",
+      "codingSchemeDesignator": "99PRI_TemplateCode",
+      "codingSchemeVersion": "1.0",
+      "Component": [
+         {
+            "label": "Primary tumor",
+            "itemNumber": "0",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.140987056102587374744549635675754006739",
+            "QuestionType": {
+               "codeValue": "Q1",
+               "codeMeaning": "Select the term that best describes the lesion",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "ImagingObservation": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID34301",
+                  "codeMeaning": "focus",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "nextId": "2.25.212263085792332314995914180361310741168"
+               },
+               {
+                  "codeValue": "RID34302",
+                  "codeMeaning": "foci",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "nextId": "2.25.212263085792332314995914180361310741168"
+               },
+               {
+                  "codeValue": "RID3874",
+                  "codeMeaning": "mass",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34342",
+                  "codeMeaning": "non-mass-like enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "nextId": "2.25.62292052941835711178784778863596470830"
+               }
+            ]
+         },
+         {
+            "label": "Shape mass lesion",
+            "itemNumber": "1",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.300867384621652943957813647765618401605",
+            "QuestionType": {
+               "codeValue": "Q18",
+               "codeMeaning": "Select the term that best describes the shape of the mass",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID5799",
+                  "codeMeaning": "round",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5800",
+                  "codeMeaning": "oval",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5801",
+                  "codeMeaning": "lobular",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5809",
+                  "codeMeaning": "irregular",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID28454",
+                  "codeMeaning": "none",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               }
+            ]
+         },
+         {
+            "label": "Margin mass lesion",
+            "itemNumber": "2",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.135510590910114519444069661291861539080",
+            "QuestionType": {
+               "codeValue": "Q19",
+               "codeMeaning": "Select the term that best describes the Margin of the mass",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID5714",
+                  "codeMeaning": "smooth margin",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5715",
+                  "codeMeaning": "irregular margin",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5713",
+                  "codeMeaning": "spiculated margin",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID28454",
+                  "codeMeaning": "none",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               }
+            ]
+         },
+         {
+            "label": "Mass enhancement",
+            "itemNumber": "3",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.2175622957363374588372922132343641381",
+            "QuestionType": {
+               "codeValue": "Q1",
+               "codeMeaning": "Select the term that best describes the lesion feature",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "ImagingObservation": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID34304",
+                  "codeMeaning": "homogeneous mass enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34303",
+                  "codeMeaning": "rim enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34305",
+                  "codeMeaning": "heterogeneous mass enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34306",
+                  "codeMeaning": "dark internal septation",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34307",
+                  "codeMeaning": "enhancing internal septation",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34308",
+                  "codeMeaning": "central enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID28454",
+                  "codeMeaning": "none",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               }
+            ]
+         },
+         {
+            "label": "Non-mass-like enhancement distribution modifiers",
+            "itemNumber": "4",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.62292052941835711178784778863596470830",
+            "QuestionType": {
+               "codeValue": "Q21",
+               "codeMeaning": "Select the term that best describes the distribution modifiers of the non-mass-like enhancement",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "ImagingObservation": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID34337",
+                  "codeMeaning": "ductal enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34335",
+                  "codeMeaning": "focal enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34336",
+                  "codeMeaning": "linear enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34338",
+                  "codeMeaning": "segmental enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34339",
+                  "codeMeaning": "regional enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34340",
+                  "codeMeaning": "multiple regions enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID28454",
+                  "codeMeaning": "none",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               }
+            ]
+         },
+         {
+            "label": "non-mass-like enhancement internal enhancement",
+            "itemNumber": "5",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.261820129703985965331464807792885939231",
+            "QuestionType": {
+               "codeValue": "Q22",
+               "codeMeaning": "Select the term that best describes the internal enhancemen of the non-mass like enhancement",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "ImagingObservation": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID34421",
+                  "codeMeaning": "homogeneous internal enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34422",
+                  "codeMeaning": "heterogeneous internal enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34309",
+                  "codeMeaning": "stippled enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34310",
+                  "codeMeaning": "clumped enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34311",
+                  "codeMeaning": "reticular enhancement",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID28454",
+                  "codeMeaning": "none",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               }
+            ]
+         },
+         {
+            "label": "Bilateral scan",
+            "itemNumber": "6",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.212263085792332314995914180361310741168",
+            "QuestionType": {
+               "codeValue": "Q2",
+               "codeMeaning": "Is the scan bilateral?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID28474",
+                  "codeMeaning": "yes",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               },
+               {
+                  "codeValue": "RID28475",
+                  "codeMeaning": "no",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "nextId": "2.25.130113394707079981256583024933667792392"
+               }
+            ]
+         },
+         {
+            "label": "Symmetry image",
+            "itemNumber": "7",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.239403627461219343328037784107459782014",
+            "QuestionType": {
+               "codeValue": "Q3",
+               "codeMeaning": "Is the scan symmetric of assymmeteric?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID5807",
+                  "codeMeaning": "symmetrical",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5808",
+                  "codeMeaning": "asymmetrical",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID28454",
+                  "codeMeaning": "none",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               }
+            ]
+         },
+         {
+            "label": "Other findings",
+            "itemNumber": "8",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "13",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.130113394707079981256583024933667792392",
+            "QuestionType": {
+               "codeValue": "Q4",
+               "codeMeaning": "What are other findings?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "ImagingObservation": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID28454",
+                  "codeMeaning": "none",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34269",
+                  "codeMeaning": "nipple retraction",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34315",
+                  "codeMeaning": "pre-contrast high ductal signal",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34316",
+                  "codeMeaning": "focal skin thickening",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34317",
+                  "codeMeaning": "diffuse skin thickening",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34318",
+                  "codeMeaning": "skin invasion",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID4865",
+                  "codeMeaning": "edema",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID3798",
+                  "codeMeaning": "lymphadenopathy",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34319",
+                  "codeMeaning": "pectoralis muscle invasion",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34320",
+                  "codeMeaning": "chest wall invasion",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34322",
+                  "codeMeaning": "hematoma/blood signal",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34321",
+                  "codeMeaning": "abnormal signal void",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34370",
+                  "codeMeaning": "set of cysts",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID49703",
+                  "codeMeaning": "Nipple invasion",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               }
+            ]
+         },
+         {
+            "label": "Background enhancement",
+            "itemNumber": "9",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.268261808145632745425493176231138744267",
+            "QuestionType": {
+               "codeValue": "Q5",
+               "codeMeaning": "Select the term that best describes the background parenchymal enhancement (BPE) in the image",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "ImagingObservation": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID5670",
+                  "codeMeaning": "minimal",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5671",
+                  "codeMeaning": "mild",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5672",
+                  "codeMeaning": "moderate",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34299",
+                  "codeMeaning": "marked",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               }
+            ]
+         },
+         {
+            "label": "Whole breast density",
+            "itemNumber": "10",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.125953272632656454716906769179257021159",
+            "QuestionType": {
+               "codeValue": "Q6",
+               "codeMeaning": "Select the term that best describes the breast density",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "ImagingObservation": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID34273",
+                  "codeMeaning": "predominantly fatty",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34274",
+                  "codeMeaning": "scattered fibroglandular densities",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34275",
+                  "codeMeaning": "heterogeneously dense",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34276",
+                  "codeMeaning": "extremely dense",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               }
+            ]
+         },
+         {
+            "label": "Tumor location",
+            "itemNumber": "11",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.253251367227537580921607479526136176003",
+            "QuestionType": {
+               "codeValue": "Q12",
+               "codeMeaning": "Select the term that best describes the location characteristics of the tumor",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "TL1",
+                  "codeMeaning": "Unifocal",
+                  "codingSchemeDesignator": "BI-RADS",
+                  "codingSchemeVersion": "1"
+               },
+               {
+                  "codeValue": "TL2",
+                  "codeMeaning": "Multifocal",
+                  "codingSchemeDesignator": "BI-RADS",
+                  "codingSchemeVersion": "1"
+               },
+               {
+                  "codeValue": "TL3",
+                  "codeMeaning": "Multicentric",
+                  "codingSchemeDesignator": "BI-RADS",
+                  "codingSchemeVersion": "1"
+               }
+            ]
+         },
+         {
+            "label": "Tumor location quadrants",
+            "itemNumber": "12",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.249165002221194601217975676958793616532",
+            "QuestionType": {
+               "codeValue": "Q11",
+               "codeMeaning": "Where is the tumor located?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID29931",
+                  "codeMeaning": "upper inner quadrant of breast",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID29934",
+                  "codeMeaning": "lower outer quadrant of breast",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID29937",
+                  "codeMeaning": "lower inner quadrant of breast",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID29928",
+                  "codeMeaning": "upper outer quadrant of breast",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               }
+            ]
+         },
+         {
+            "label": "Tumor volume",
+            "itemNumber": "13",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.179073004443771871417337848440435696805",
+            "ImagingObservation": {
+               "annotatorConfidence": "false",
+               "ImagingObservationCharacteristic": {
+                  "label": "Region growing estimation",
+                  "itemNumber": "0",
+                  "authors": "Default User",
+                  "explanatoryText": "",
+                  "minCardinality": "1",
+                  "maxCardinality": "1",
+                  "shouldDisplay": "true",
+                  "groupLabel": "",
+                  "id": "2.25.96072701948996387609911368578923688888",
+                  "annotatorConfidence": "false",
+                  "AllowedTerm": {
+                     "codeValue": "RID35968",
+                     "codeMeaning": "Volume quantification",
+                     "codingSchemeDesignator": "RadLex",
+                     "codingSchemeVersion": "",
+                     "CharacteristicQuantification": {
+                        "name": "estimation tumor volume",
+                        "annotatorConfidence": "false",
+                        "characteristicQuantificationIndex": "0",
+                        "Quantile": {
+                           "minValue": "100.0",
+                           "maxValue": "1500.0",
+                           "bins": "10",
+                           "defaultBin": "10"
+                        }
+                     }
+                  },
+                  "QuestionType": {
+                     "codeValue": "Q15",
+                     "codeMeaning": "Give the estimation of tumor volume calculated by the region growing algorithm",
+                     "codingSchemeDesignator": "BI-RADS",
+                     "codingSchemeVersion": "1"
+                  }
+               }
+            },
+            "AllowedTerm": {
+               "codeValue": "RID28668",
+               "codeMeaning": "volume",
+               "codingSchemeDesignator": "RadLex",
+               "codingSchemeVersion": "1.0"
+            }
+         },
+         {
+            "label": "DWI findings",
+            "itemNumber": "14",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.196187722755853276853476536135020334589",
+            "ImagingObservation": {
+               "annotatorConfidence": "false",
+               "ImagingObservationCharacteristic": [
+                  {
+                     "label": "Signal distribution tumor at high b-value DWI",
+                     "itemNumber": "0",
+                     "authors": "Default User",
+                     "explanatoryText": "",
+                     "minCardinality": "1",
+                     "maxCardinality": "1",
+                     "shouldDisplay": "true",
+                     "groupLabel": "",
+                     "id": "2.25.261974527665452749190888010837919705192",
+                     "annotatorConfidence": "false",
+                     "AllowedTerm": {
+                        "codeValue": "RID5958",
+                        "codeMeaning": "distribution pattern",
+                        "codingSchemeDesignator": "RadLex",
+                        "codingSchemeVersion": "1.0",
+                        "CharacteristicQuantification": {
+                           "name": "Signal distribution at high b-value",
+                           "annotatorConfidence": "false",
+                           "characteristicQuantificationIndex": "0",
+                           "Quantile": {
+                              "minValue": "0.0",
+                              "maxValue": "1000.0",
+                              "bins": "4",
+                              "defaultBin": "4"
+                           }
+                        }
+                     },
+                     "QuestionType": {
+                        "codeValue": "Q23",
+                        "codeMeaning": "Indicate the quartile representing the distribution of the signal in the tumor at the high b-value image",
+                        "codingSchemeDesignator": "BI-RADS",
+                        "codingSchemeVersion": "1"
+                     }
+                  },
+                  {
+                     "label": "Distribution ADC value",
+                     "itemNumber": "1",
+                     "authors": "Default User",
+                     "explanatoryText": "",
+                     "minCardinality": "1",
+                     "maxCardinality": "1",
+                     "shouldDisplay": "true",
+                     "groupLabel": "",
+                     "id": "2.25.138842334177314658009365411616964372070",
+                     "annotatorConfidence": "false",
+                     "AllowedTerm": {
+                        "codeValue": "RID5958",
+                        "codeMeaning": "distribution pattern",
+                        "codingSchemeDesignator": "RadLex",
+                        "codingSchemeVersion": "1.0",
+                        "CharacteristicQuantification": {
+                           "name": "Distribution ADC value",
+                           "annotatorConfidence": "false",
+                           "characteristicQuantificationIndex": "0",
+                           "Quantile": {
+                              "minValue": "0.0",
+                              "maxValue": "1000.0",
+                              "bins": "4",
+                              "defaultBin": "4"
+                           }
+                        }
+                     },
+                     "QuestionType": {
+                        "codeValue": "Q24",
+                        "codeMeaning": "Indicate the quartile representing the distribution of the ADC-value of the tumor",
+                        "codingSchemeDesignator": "BI-RADS",
+                        "codingSchemeVersion": "1"
+                     }
+                  }
+               ]
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID28474",
+                  "codeMeaning": "yes",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               },
+               {
+                  "codeValue": "RID28475",
+                  "codeMeaning": "no",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               }
+            ]
+         },
+         {
+            "label": "tumor ROI",
+            "itemNumber": "15",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "5",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.162930486255335786011048349278396788460",
+            "GeometricShape": "Polyline"
+         },
+         {
+            "label": "size tumor anterior-posterior",
+            "itemNumber": "16",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.271316379867515356636489727701439824030",
+            "QuestionType": {
+               "codeValue": "Q12",
+               "codeMeaning": "Indicate the size of the tumor by drawing a line from anterior to posterior",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "GeometricShape": "MultiPoint"
+         },
+         {
+            "label": "size cranial-cordial",
+            "itemNumber": "17",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.265256743023989012984577284452482670264",
+            "QuestionType": {
+               "codeValue": "Q13",
+               "codeMeaning": "Indicate the size of the tumor by drawing a line form cranial to cordial",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "GeometricShape": "MultiPoint"
+         },
+         {
+            "label": "size left-right",
+            "itemNumber": "18",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.325322165150557359435507234940289454986",
+            "QuestionType": {
+               "codeValue": "Q14",
+               "codeMeaning": "Indicate the size of the tumor by drawing a line form left to right",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "GeometricShape": "MultiPoint"
+         },
+         {
+            "label": "Distance to nipple",
+            "itemNumber": "19",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.299429544608611359258113335560102177272",
+            "QuestionType": {
+               "codeValue": "Q16",
+               "codeMeaning": "Draw a line from the centre of the tumor to nipple",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "GeometricShape": "MultiPoint"
+         },
+         {
+            "label": "Presence of implant",
+            "itemNumber": "20",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.134778238316505864961882643527701073145",
+            "QuestionType": {
+               "codeValue": "Q7",
+               "codeMeaning": "Is there an implant?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID28474",
+                  "codeMeaning": "yes",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID28475",
+                  "codeMeaning": "no",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "nextId": "2.25.97589513511886567303933174297800671452"
+               }
+            ]
+         },
+         {
+            "label": "Lumen type implant",
+            "itemNumber": "21",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.97514329268716163773873319023293443840",
+            "QuestionType": {
+               "codeValue": "Q27",
+               "codeMeaning": "What is the lumen type of the implant?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "I1",
+                  "codeMeaning": "single-lumen",
+                  "codingSchemeDesignator": "BI-RADS",
+                  "codingSchemeVersion": "1"
+               },
+               {
+                  "codeValue": "I2",
+                  "codeMeaning": "double-lumen",
+                  "codingSchemeDesignator": "BI-RADS",
+                  "codingSchemeVersion": "1"
+               },
+               {
+                  "codeValue": "RID28454",
+                  "codeMeaning": "none",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               }
+            ]
+         },
+         {
+            "label": "Material implant",
+            "itemNumber": "22",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.1265855935776273784782254051149261804",
+            "QuestionType": {
+               "codeValue": "Q27",
+               "codeMeaning": "What is the material of the implant?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID35968",
+                  "codeMeaning": "Silicone breast implant",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID49712",
+                  "codeMeaning": "Saline breast implant",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID49713",
+                  "codeMeaning": "Other breast implant",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID28454",
+                  "codeMeaning": "none",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               }
+            ]
+         },
+         {
+            "label": "Presence DCIS",
+            "itemNumber": "23",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.97589513511886567303933174297800671452",
+            "QuestionType": {
+               "codeValue": "Q17",
+               "codeMeaning": "Are there DCIS present?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "ImagingObservation": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID28474",
+                  "codeMeaning": "yes",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID28475",
+                  "codeMeaning": "no",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               }
+            ]
+         },
+         {
+            "label": "Lymph node status",
+            "itemNumber": "24",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.219424290975900652054607718944206614414",
+            "QuestionType": {
+               "codeValue": "Q8",
+               "codeMeaning": "Select the term that best describes the lymph node status?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "ImagingObservation": {
+               "annotatorConfidence": "false",
+               "ImagingObservationCharacteristic": {
+                  "label": "Number of lymph nodes",
+                  "itemNumber": "0",
+                  "authors": "Default User",
+                  "explanatoryText": "",
+                  "minCardinality": "1",
+                  "maxCardinality": "1",
+                  "shouldDisplay": "true",
+                  "groupLabel": "",
+                  "id": "2.25.250187995497032254628641828450682518647",
+                  "annotatorConfidence": "false",
+                  "AllowedTerm": {
+                     "codeValue": "RID28847",
+                     "codeMeaning": "lymph node group",
+                     "codingSchemeDesignator": "RadLex",
+                     "codingSchemeVersion": "1.0",
+                     "CharacteristicQuantification": {
+                        "name": "Number of lymph nodes",
+                        "annotatorConfidence": "false",
+                        "characteristicQuantificationIndex": "0",
+                        "Quantile": {
+                           "minValue": "0.0",
+                           "maxValue": "20.0",
+                           "bins": "20",
+                           "defaultBin": "20"
+                        }
+                     }
+                  },
+                  "QuestionType": {
+                     "codeValue": "Q25",
+                     "codeMeaning": "Indicate the number of lymph nodes",
+                     "codingSchemeDesignator": "BI-RADS",
+                     "codingSchemeVersion": "1"
+                  }
+               }
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID5670",
+                  "codeMeaning": "minimal",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5671",
+                  "codeMeaning": "mild",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID5672",
+                  "codeMeaning": "moderate",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               },
+               {
+                  "codeValue": "RID34299",
+                  "codeMeaning": "marked",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               }
+            ]
+         },
+         {
+            "label": "Locaton lymph node status",
+            "itemNumber": "25",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.293374084615250043246419777476624654092",
+            "QuestionType": {
+               "codeValue": "Q9",
+               "codeMeaning": "What is location of the lymph nodes?",
+               "codingSchemeDesignator": "BI-RADS",
+               "codingSchemeVersion": "1"
+            },
+            "AnatomicEntity": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "LN1",
+                  "codeMeaning": "Level 1: lower axillary nodes, located lateral to the pectoralis minor muscle",
+                  "codingSchemeDesignator": "BI-RADS",
+                  "codingSchemeVersion": "1"
+               },
+               {
+                  "codeValue": "LN2",
+                  "codeMeaning": "Level 2: midaxillary nodes, located eneath the pectoralis minor muscle",
+                  "codingSchemeDesignator": "BI-RADS",
+                  "codingSchemeVersion": "1"
+               },
+               {
+                  "codeValue": "LN3",
+                  "codeMeaning": "Level 3: apical axillary nodes",
+                  "codingSchemeDesignator": "BI-RADS",
+                  "codingSchemeVersion": "1"
+               }
+            ]
+         },
+         {
+            "label": "Kinetic curve assessment",
+            "itemNumber": "26",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.38991069393471382581041455425733274646",
+            "ImagingObservation": {
+               "annotatorConfidence": "false",
+               "ImagingObservationCharacteristic": [
+                  {
+                     "label": "Initial rise",
+                     "itemNumber": "0",
+                     "authors": "Default User",
+                     "explanatoryText": "",
+                     "minCardinality": "1",
+                     "maxCardinality": "1",
+                     "shouldDisplay": "true",
+                     "groupLabel": "",
+                     "id": "2.25.250211380412155343038501248895772268597",
+                     "annotatorConfidence": "false",
+                     "AllowedTerm": [
+                        {
+                           "codeValue": "RID34328",
+                           "codeMeaning": "slow",
+                           "codingSchemeDesignator": "RadLex",
+                           "codingSchemeVersion": "1.0"
+                        },
+                        {
+                           "codeValue": "RID34329",
+                           "codeMeaning": "rapid",
+                           "codingSchemeDesignator": "RadLex",
+                           "codingSchemeVersion": "1.0"
+                        },
+                        {
+                           "codeValue": "RID5775",
+                           "codeMeaning": "medium",
+                           "codingSchemeDesignator": "RadLex",
+                           "codingSchemeVersion": "1.0"
+                        }
+                     ]
+                  },
+                  {
+                     "label": "Delayed phase",
+                     "itemNumber": "1",
+                     "authors": "Default User",
+                     "explanatoryText": "",
+                     "minCardinality": "1",
+                     "maxCardinality": "1",
+                     "shouldDisplay": "true",
+                     "groupLabel": "",
+                     "id": "2.25.132996604439478199354892072993563489304",
+                     "annotatorConfidence": "false",
+                     "AllowedTerm": [
+                        {
+                           "codeValue": "RID34331",
+                           "codeMeaning": "persistent delayed phase",
+                           "codingSchemeDesignator": "RadLex",
+                           "codingSchemeVersion": "1.0"
+                        },
+                        {
+                           "codeValue": "RID34332",
+                           "codeMeaning": "plateau delayed phase",
+                           "codingSchemeDesignator": "RadLex",
+                           "codingSchemeVersion": "1.0"
+                        },
+                        {
+                           "codeValue": "RID34333",
+                           "codeMeaning": "washout delayed phase",
+                           "codingSchemeDesignator": "RadLex",
+                           "codingSchemeVersion": "1.0"
+                        }
+                     ]
+                  },
+                  {
+                     "label": "Maximum signal intensity",
+                     "itemNumber": "2",
+                     "authors": "Default User",
+                     "explanatoryText": "",
+                     "minCardinality": "1",
+                     "maxCardinality": "1",
+                     "shouldDisplay": "true",
+                     "groupLabel": "",
+                     "id": "2.25.119738939829977970842171932728674735696",
+                     "annotatorConfidence": "false",
+                     "AllowedTerm": {
+                        "codeValue": "KC1",
+                        "codeMeaning": "Maximum signal intensity",
+                        "codingSchemeDesignator": "BI-RADS",
+                        "codingSchemeVersion": "1",
+                        "CharacteristicQuantification": {
+                           "name": "Maximum signal intensity",
+                           "annotatorConfidence": "false",
+                           "characteristicQuantificationIndex": "0",
+                           "Quantile": {
+                              "minValue": "0.0",
+                              "maxValue": "100.0",
+                              "bins": "10",
+                              "defaultBin": "10"
+                           }
+                        }
+                     }
+                  },
+                  {
+                     "label": "Time to maximum signal in seconds",
+                     "itemNumber": "3",
+                     "authors": "Default User",
+                     "explanatoryText": "",
+                     "minCardinality": "1",
+                     "maxCardinality": "1",
+                     "shouldDisplay": "true",
+                     "groupLabel": "",
+                     "id": "2.25.141415264875590125175393637512439210770",
+                     "annotatorConfidence": "false",
+                     "AllowedTerm": {
+                        "codeValue": "KC2",
+                        "codeMeaning": "Time to maximum signal",
+                        "codingSchemeDesignator": "BI-RADS",
+                        "codingSchemeVersion": "1",
+                        "CharacteristicQuantification": {
+                           "name": "Time to maximum signal in seconds",
+                           "annotatorConfidence": "false",
+                           "characteristicQuantificationIndex": "0",
+                           "Quantile": {
+                              "minValue": "0.0",
+                              "maxValue": "10.0",
+                              "bins": "10",
+                              "defaultBin": "10"
+                           }
+                        }
+                     }
+                  }
+               ]
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID28474",
+                  "codeMeaning": "yes",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0",
+                  "defaultAnswer": "true"
+               },
+               {
+                  "codeValue": "RID28475",
+                  "codeMeaning": "no",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": "1.0"
+               }
+            ]
+         },
+         {
+            "label": "Assessment category",
+            "itemNumber": "27",
+            "authors": "Default User",
+            "explanatoryText": "",
+            "minCardinality": "1",
+            "maxCardinality": "1",
+            "shouldDisplay": "true",
+            "groupLabel": "",
+            "id": "2.25.31099028588784974042522120675370007165",
+            "ImagingObservation": {
+               "annotatorConfidence": "false"
+            },
+            "AllowedTerm": [
+               {
+                  "codeValue": "RID36029",
+                  "codeMeaning": "Bi-rads 0: incomplete - need additional imaging evaluation",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID36028",
+                  "codeMeaning": "Bi-rads 1: negative",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID36029",
+                  "codeMeaning": "Bi-rads 2: benign findings",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID36041",
+                  "codeMeaning": "Bi-rads 3: probably benign",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID36031",
+                  "codeMeaning": "Bi-rads 4A: low susicion for malignancy",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID 36032",
+                  "codeMeaning": "Bi-rads 4B: moderate suspicion of malignancy",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID 36033",
+                  "codeMeaning": "Bi-rads 4C: high suspicion for malignancy",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID36034",
+                  "codeMeaning": "Bi-rads 5: highly suggestive of malignancy",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               },
+               {
+                  "codeValue": "RID36035",
+                  "codeMeaning": "Bi-rads 6: known biopsy-proven malignancy",
+                  "codingSchemeDesignator": "RadLex",
+                  "codingSchemeVersion": ""
+               }
+            ]
+         }
+      ]
+   }
+}

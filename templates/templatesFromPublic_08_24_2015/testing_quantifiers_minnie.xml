@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.2535853645424096659245229006985152396887" name="testing group" authors="Debra Willrett" version="1.0" creationDate="2013-04-23" description="group of testing templates" xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.3059502976353540554087811136203187672299" name="minnie" authors="Default User" version="1" creationDate="2015-01-30" description="testing quantifiers" modality="CT" codeMeaning="Minnie Mouse" codeValue="RID344045" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0">
+      <Component label="polygon" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.294253544717129986553974839657379990656">
+         <GeometricShape>Polyline</GeometricShape>
+      </Component>
+      <Component label="head" itemNumber="1" authors="Default User" explanatoryText="text" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.85043170596924078719738306041925392318">
+         <AnatomicEntity annotatorConfidence="false">
+            <AnatomicEntityCharacteristic label="leg" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.96222470059914333012293749203319505848" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID35158" codeMeaning="dog leg sign" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID2910" codeMeaning="skeletal muscle of leg" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+            </AnatomicEntityCharacteristic>
+         </AnatomicEntity>
+         <AllowedTerm codeValue="RID35264" codeMeaning="headcheese sign" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID35128" codeMeaning="CT arrowhead sign" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+      </Component>
+   </Template>
+   <Tags>
+      <Tag>
+         <TagName codeValue="112043" codeMeaning="Target Lesion Progressive Disease" codingSchemeDesignator="DCM" codingSchemeVersion="1.0"/>
+         <TagValue>
+            <CodedValue codeValue="112043" codeMeaning="Target Lesion Progressive Disease" codingSchemeDesignator="DCM" codingSchemeVersion="1.0"/>
+         </TagValue>
+      </Tag>
+      <Tag>
+         <TagName codeValue="112046" codeMeaning="Non-Target Lesion Incomplete Response or Stable Disease" codingSchemeDesignator="DCM" codingSchemeVersion="1.0"/>
+         <TagValue>
+            <CodedValue codeValue="112046" codeMeaning="Non-Target Lesion Incomplete Response or Stable Disease" codingSchemeDesignator="DCM" codingSchemeVersion="1.0"/>
+         </TagValue>
+      </Tag>
+   </Tags>
+</TemplateContainer>

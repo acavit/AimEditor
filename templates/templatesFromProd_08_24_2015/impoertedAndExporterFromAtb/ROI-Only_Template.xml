@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.5548621650131.1654915955925.163226783989" name="ROI Only Template" authors="The AIM team" version="1" creationDate="2012-06-10" description="This template is used to collect ROI only from readers." xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.158009446295858919844005670982612161979" name="ROIOnly" authors="amsnyder" version="1.1" creationDate="2011-11-16" description="Template used for collecting only ROIs" codingSchemeVersion="1.0" codeMeaning="ROI Only" codeValue="ROI" codingSchemeDesignator="RECIST">
+      <Component label="validate" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.160559461531180601689784456811019731675">
+        <Label></Label>
+      </Component>
+   </Template>
+</TemplateContainer>
+
+
+
+
+

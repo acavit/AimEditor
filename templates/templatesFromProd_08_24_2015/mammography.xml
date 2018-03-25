@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.54451223310925796038610042632877732221" name="Mammography" authors="Daniel Rubin" version="1.0" creationDate="2013-06-08" description="Mammography BI-RADS template" xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.48214704905077269738687439799216916030" name="Mammography" authors="Daniel Rubin" version="1.0" creationDate="2013-06-08" description="BI-RADS descriptors" codeValue="RID10357" codeMeaning=" mammography" codingSchemeDesignator="RadLex3.8" codingSchemeVersion="">
+      <Component label="LesionLocation" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.308189580785064254091499661626900938780">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID29931" codeMeaning=" upper inner quadrant of breast" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID29928" codeMeaning=" upper outer quadrant of breast" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID29937" codeMeaning=" lower inner quadrant of breast" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID29934" codeMeaning=" lower outer quadrant of breast" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID29949" codeMeaning=" central region of breast" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID29902" codeMeaning=" nipple" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID29952" codeMeaning=" subareolar region of breast" codingSchemeDesignator="RadLex3.8"/>
+      </Component>
+      <Component label="BreastDensity" itemNumber="1" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.335523008439547158096441950320922785977">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID34273" codeMeaning=" predominantly fatty" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34274" codeMeaning=" scattered fibroglandular densities" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34275" codeMeaning=" heterogeneously dense" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34276" codeMeaning=" extremely dense" codingSchemeDesignator="RadLex3.8"/>
+      </Component>
+      <Component label="MassDensity" itemNumber="2" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.54269568673334344922781644485168101437">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID34240" codeMeaning=" high density" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID6043" codeMeaning=" equal density" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34243" codeMeaning=" low density" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID43336" codeMeaning=" water density" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34275" codeMeaning=" heterogeneously dense" codingSchemeDesignator="RadLex3.8"/>
+      </Component>
+      <Component label="MassShape" itemNumber="3" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.55681200745652897105156186375179513342">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID5799" codeMeaning=" round" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5801" codeMeaning=" lobular" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5800" codeMeaning=" oval" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5809" codeMeaning=" irregular" codingSchemeDesignator="RadLex3.8"/>
+      </Component>
+      <Component label="MassMargin" itemNumber="4" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.208646600352240793665145680191002985126">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID5911" codeMeaning=" sharp" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5712" codeMeaning=" microlobulated margin" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5710" codeMeaning=" obscured margin" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5709" codeMeaning=" indistinct margin" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5715" codeMeaning=" irregular margin" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5711" codeMeaning=" lobulated margin" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5713" codeMeaning=" spiculated margin" codingSchemeDesignator="RadLex3.8"/>
+      </Component>
+      <Component label="Calcification" itemNumber="5" authors="Default User" explanatoryText="" minCardinality="0" maxCardinality="10" shouldDisplay="true" groupLabel="" id="2.25.46870678836024858724151379092074052651">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID34252" codeMeaning=" skin calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34253" codeMeaning=" vascular calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID29213" codeMeaning=" coarse calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34248" codeMeaning=" large rod-like calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34251" codeMeaning=" round calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID29212" codeMeaning=" eggshell calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34249" codeMeaning=" milk of calcium calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34296" codeMeaning=" suture calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34246" codeMeaning=" dystrophic calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID29214" codeMeaning=" amorphous calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34256" codeMeaning=" coarse heterogeneous calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34257" codeMeaning=" fine pleomorphic calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34250" codeMeaning=" lucent-centered calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34255" codeMeaning=" fine linear calcification" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34388" codeMeaning=" microcalcifications" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID5196" codeMeaning="calcification" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0" nextId="2.25.262482459401526980676681913816996563158">
+            <ValidTerm codeValue="RID28475" codeMeaning="no" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         </AllowedTerm>
+      </Component>
+      <Component label="CalificatioonDistribution" itemNumber="6" authors="Default User" explanatoryText="" minCardinality="0" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.306959133201987312293713082103611614614">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID5701" codeMeaning=" diffuse" codingSchemeDesignator="RadLex3.8"/>
+         <AllowedTerm codeValue="RID34260" codeMeaning="regional" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID5700" codeMeaning="grouped" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID5811" codeMeaning="linear" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID5704" codeMeaning="patchy" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+      </Component>
+      <Component label="AssociatedFindings" itemNumber="7" authors="Default User" explanatoryText="" minCardinality="0" maxCardinality="10" shouldDisplay="true" groupLabel="" id="2.25.262482459401526980676681913816996563158">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID34383" codeMeaning="skin retraction" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID34267" codeMeaning="skin lesion" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID34270" codeMeaning="skin thickening" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID34269" codeMeaning="nipple retraction" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID34271" codeMeaning="trabecular thickening" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID34272" codeMeaning="axillary adenopathy" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID34261" codeMeaning="architectural distortion" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID4705" codeMeaning="hematoma" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID3829" codeMeaning="scar" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID3830" codeMeaning="radial scar" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+      </Component>
+      <Component label="OtherFindings" itemNumber="8" authors="Default User" explanatoryText="" minCardinality="0" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.129125625523971082945956048385137348165">
+         <ImagingObservation annotatorConfidence="false"/>
+         <AllowedTerm codeValue="RID34264" codeMeaning="focal asymmetry" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID34263" codeMeaning="Intramammary lymph node" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+         <AllowedTerm codeValue="RID34262" codeMeaning="asymmetric tubular structure" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+      </Component>
+   </Template>
+</TemplateContainer>

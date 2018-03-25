@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.2048721840193.611045891476.108817855993" name="SEG Only Template" authors="The AIM team" version="1" creationDate="2012-08-08" description="This template is used to collect SEG only from readers." xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template templateType="Image" uid="2.25.1580094462958589198440056709826121619790" name="SEGOnly" authors="dwillrett" version="1.1" creationDate="2011-11-16" description="Template used for collecting only SEGs" codingSchemeVersion="1.0" codeMeaning="SEG Only" codeValue="SEG" codingSchemeDesignator="SEG">
+       <Component label="Label" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.160559461531180601689784456811019731675">
+        <Label>Label</Label>
+      </Component>
+   </Template>
+</TemplateContainer>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.201895001861236504221893659611198146362" name="test" authors="Default User" version="test" creationDate="2015-11-17" description="test" xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.314744059417011672865479827343078283771" name="noRegularComponent" authors="Default User" version="1" creationDate="2015-10-29" description="testing quantile" codeMeaning="Test template" codeValue="99PRI_TT_A0489" codingSchemeDesignator="99PRI_TemplateCode" codingSchemeVersion="1.0">
+      <Component label="Label" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.160559461531180601689784456811019731675">
+        <Label>Label</Label>
+      </Component>
+   </Template>
+</TemplateContainer>

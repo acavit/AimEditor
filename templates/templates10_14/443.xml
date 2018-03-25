@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.258856187448199854314222194499437687303" name="cavitTestContainer" authors="cavit" version="1" creationDate="2015-10-14" description="cavitTestContainer" xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.187406338023470730644154642349084969929" name="cavitTemplateForQuantifiers" authors="Default User" version="1.0" creationDate="2015-10-14" description="we try to create a quantifier without upper and lower limit" codingSchemeDesignator="99PRIVATEALGO" codeMeaning="A length in millimeters between two points" codeValue="ALG-1" codingSchemeVersion="1.0">
+      <Component label="test" itemNumber="0" authors="Default User" explanatoryText="" minCardinality="0" maxCardinality="0" shouldDisplay="true" groupLabel="" id="2.25.263432437445000007738986662984097748380">
+         <Inference annotatorConfidence="false"/>
+         <AllowedTerm codeValue="ALG-1" codeMeaning="A length in millimeters between two points" codingSchemeDesignator="99PRIVATEALGO" codingSchemeVersion="1.0"/>
+      </Component>
+      <Tags>
+         <Tag>
+            <TagName codeValue="71555" codeMeaning="MRA CHEST" codingSchemeDesignator="CPT" codingSchemeVersion="1.0"/>
+            <TagValue>
+               <StringValue>aa</StringValue>
+            </TagValue>
+         </Tag>
+      </Tags>
+   </Template>
+</TemplateContainer>

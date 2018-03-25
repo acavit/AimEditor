@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateContainer uid="2.25.215225874603011604925810042375269318605" name="TCGA Renal" authors="kirbyju" version="1.0" creationDate="2012-04-24" description="Template for TCGA Renal Research Group image features" xsi:schemaLocation="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate AIMTemplate_v2rv13.xsd" xmlns="gme://caCORE.caCORE/3.2/edu.northwestern.radiology.AIMTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Template uid="2.25.151804757954783958321164431197955256999" name="KIRC Enhancement" authors="kirbyju" version="1.0" creationDate="2012-04-27" description="For evaluation of enhancement related measurements and features in TCGA-KIRC subjects by the TCGA Renal Phenotype Research Group." codeMeaning="TCGA-KIRC Enhancement" codeValue="99_CIP_KIRC-02" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0">
+      <Component label="Enhancement measurement" itemNumber="0" authors="" explanatoryText="Measure the area of enhancement using the ellipitical ROI tool. Hounsfield Units (CT) or Mean Signal Intensity (MR) will be automatically recorded.  Skip this form if there is no contrast enhancement series for this subject." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.473378911523.143503203277.231237945040">
+         <GeometricShape>Ellipse</GeometricShape>
+      </Component>
+      <Component label="Enhancement" itemNumber="1" authors="kirbyju" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="false" groupLabel="" id="2.25.473378911611.143503203366.231237945091">
+         <ImagingObservation annotatorConfidence="false">
+            <ImagingObservationCharacteristic label="Modality" itemNumber="0" authors="kirbyju" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.473378911700.143503203456.231237945142" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-36" codeMeaning="CT" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-37" codeMeaning="MR" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Enhancement Phase" itemNumber="1" authors="kirbyju" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.473378911791.143503203547.231237945193" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-14" codeMeaning="Precontrast" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-39" codeMeaning="Corticomedullary" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-16" codeMeaning="Nephrographic" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-17" codeMeaning="Excretion" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Enhancing Entity" itemNumber="2" authors="kirbyju" explanatoryText="Enhancement area of cortex" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.473378911883.143503203639.231237945244" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-19" codeMeaning="Tumor" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-20" codeMeaning="Aorta" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-21" codeMeaning="Normal Renal Cortex" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+         </ImagingObservation>
+         <AllowedTerm codeValue="RID6054" codeMeaning="enhancement characteristic" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+      </Component>
+   </Template>
+   <Template uid="2.25.186635936167022339612701317810251153127" name="KIRC Tumor" authors="kirbyju" version="1.0" creationDate="2012-04-24" description="For evaluation of tumor related measurements and features in TCGA-KIRC subjects by the TCGA Renal Phenotype Research Group." codeMeaning="TCGA-KIRC Tumor" codeValue="99_CIP_KIRC-01" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0">
+      <Component label="Image Acquisitions" itemNumber="0" authors="kirbyju" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="false" groupLabel="" id="2.25.473378910035.143503201787.231237944020">
+         <ImagingObservation annotatorConfidence="false">
+            <ImagingObservationCharacteristic label="Modality" itemNumber="0" authors="kirbyju" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="" id="2.25.473378910097.143503201850.231237944071" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-36" codeMeaning="CT" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-37" codeMeaning="MR" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Contrast Enhanced Phases Available" itemNumber="1" authors="kirbyju" explanatoryText="Check all available scans for this subject." minCardinality="0" maxCardinality="4" shouldDisplay="true" groupLabel="" id="2.25.473378910161.143503201914.231237944122" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-38" codeMeaning="Precontrast" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-39" codeMeaning="Corticomedullary" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-40" codeMeaning="Nephrographic" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-41" codeMeaning="Excretory" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+         </ImagingObservation>
+         <AllowedTerm codeValue="KIRC-35" codeMeaning="Acquisition Protocol" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+      </Component>
+      <Component label="Tumor Characteristics" itemNumber="1" authors="kirbyju" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="false" groupLabel="" id="2.25.473378910226.143503201979.231237944173">
+         <ImagingObservation annotatorConfidence="false">
+            <ImagingObservationCharacteristic label="Tumor Side" itemNumber="0" authors="kirbyju" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Location" id="2.25.473378910292.143503202045.231237944224" annotatorConfidence="false">
+               <AllowedTerm codeValue="G-A100" codeMeaning="Right" codingSchemeDesignator="SRT" codingSchemeVersion=""/>
+               <AllowedTerm codeValue="G-A101" codeMeaning="Left" codingSchemeDesignator="SRT" codingSchemeVersion=""/>
+               <AllowedTerm codeValue="RID5771" codeMeaning="bilateral" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Tumor Margin" itemNumber="1" authors="kirbyju" explanatoryText="Review in nephrographic phase." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Morphology" id="2.25.473378910359.143503202112.231237944275" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-02" codeMeaning="well-defined" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-03" codeMeaning="ill-defined" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Tumor Composition" itemNumber="2" authors="kirbyju" explanatoryText="Cystic are masses with no measurable solid component." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Morphology" id="2.25.473378910427.143503202180.231237944326" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-04" codeMeaning="Solid - Homogeneous enhancement" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-05" codeMeaning="Solid - Heterogeneous enhancement" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-06" codeMeaning="Mixed - Predominantly solid (&gt;50%) with cystic elements" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-07" codeMeaning="Mixed - Predominantly cystic (&gt;50%) with solid elements" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-08" codeMeaning="Cystic - Unilocular" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-32" codeMeaning="Cystic - Multilocular" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Calcification" itemNumber="3" authors="kirbyju" explanatoryText="" minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Morphology" id="2.25.473378910496.143503202249.231237944377" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID28474" codeMeaning="yes" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID28475" codeMeaning="no" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-34" codeMeaning="Required Images Not Available" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Tumor Necrosis" itemNumber="4" authors="kirbyju" explanatoryText="Assess the nephrographic and delayed phases." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Morphology" id="2.25.473378910567.143503202320.231237944428" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID28474" codeMeaning="yes" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID28475" codeMeaning="no" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-34" codeMeaning="Required Images Not Available" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Tumor Growth Pattern" itemNumber="5" authors="kirbyju" explanatoryText="Transparenchymal includes both endophytic and exophytic growth.  Intraparenchymal includes cortex only." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Morphology" id="2.25.473378910639.143503202392.231237944479" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID6263" codeMeaning="exophytic" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID6264" codeMeaning="intraparenchymal" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-09" codeMeaning="endophytic" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-10" codeMeaning="transparenchymal" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Increased Vascularity" itemNumber="6" authors="kirbyju" explanatoryText="Select N/A if the required images were not available for assessment. " minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Morphology" id="2.25.473378910712.143503202465.231237944530" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-12" codeMeaning="intratumoral" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-11" codeMeaning="peritumoral" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID28454" codeMeaning="none" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-34" codeMeaning="Required Images Not Available" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Renal Hilar Fat Invasion" itemNumber="7" authors="kirbyju" explanatoryText="Select N/A if the required images were not available for assessment. " minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Invasion" id="2.25.473378910786.143503202540.231237944581" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID28474" codeMeaning="yes" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID28475" codeMeaning="no" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-33" codeMeaning="Indeterminate" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-34" codeMeaning="Required Images Not Available" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Liver Invasion" itemNumber="8" authors="kirbyju" explanatoryText="Select N/A if the required images were not available for assessment." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Invasion" id="2.25.473378910862.143503202616.231237944632" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID28474" codeMeaning="yes" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID28475" codeMeaning="no" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-33" codeMeaning="Indeterminate" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-34" codeMeaning="Required Images Not Available" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Adrenal Invasion" itemNumber="9" authors="kirbyju" explanatoryText="Select N/A if the required images were not available for assessment." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Invasion" id="2.25.473378910940.143503202694.231237944683" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID28474" codeMeaning="yes" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID28475" codeMeaning="no" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-33" codeMeaning="Indeterminate" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-34" codeMeaning="Required Images Not Available" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Renal Vein Invasion" itemNumber="10" authors="kirbyju" explanatoryText="Select N/A if the required images were not available for assessment." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Invasion" id="2.25.473378911020.143503202774.231237944734" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-22" codeMeaning="Tumor Thrombus" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-44" codeMeaning="No Renal vein invasion" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-33" codeMeaning="Indeterminate" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-34" codeMeaning="Required Images Not Available" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Collection System Invasion" itemNumber="11" authors="kirbyju" explanatoryText="Select N/A if the required images were not available for assessment." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Invasion" id="2.25.473378911101.143503202855.231237944785" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID28474" codeMeaning="yes" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID28475" codeMeaning="no" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-33" codeMeaning="Indeterminate" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-34" codeMeaning="Required Images Not Available" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="IVC invasion" itemNumber="12" authors="kirbyju" explanatoryText="Select N/A if the required images were not available for assessment." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Invasion" id="2.25.473378911183.143503202937.231237944836" annotatorConfidence="false">
+               <AllowedTerm codeValue="KIRC-24" codeMeaning="Infrarenal" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-25" codeMeaning="Infrahepatic" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-26" codeMeaning="Suprahepatic" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-27" codeMeaning="Right Atrium" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-42" codeMeaning="Intrahepatic" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-43" codeMeaning="No IVC" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-33" codeMeaning="Indeterminate" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-34" codeMeaning="Required Images Not Available" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Regional Lymph Node Metastasis" itemNumber="13" authors="kirbyju" explanatoryText="&gt;=1cm on short axis is metastasis." minCardinality="1" maxCardinality="1" shouldDisplay="true" groupLabel="Metastasis" id="2.25.473378911266.143503203020.231237944887" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID28474" codeMeaning="yes" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID28475" codeMeaning="no" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+            <ImagingObservationCharacteristic label="Distant Metastases Locations" itemNumber="14" authors="kirbyju" explanatoryText="" minCardinality="1" maxCardinality="7" shouldDisplay="true" groupLabel="Metastasis" id="2.25.473378911350.143503203104.231237944938" annotatorConfidence="false">
+               <AllowedTerm codeValue="RID28722" codeMeaning="adrenal" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-31" codeMeaning="Bone" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-29" codeMeaning="Contralateral Adrenal" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-33" codeMeaning="Distant Lymph Node" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID58" codeMeaning="liver" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="RID1301" codeMeaning="lung" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="KIRC-30" codeMeaning="Psoas" codingSchemeDesignator="99_NCI_CIP" codingSchemeVersion="1.0"/>
+               <AllowedTerm codeValue="C17649" codeMeaning="Other" codingSchemeDesignator="NCIT" codingSchemeVersion=""/>
+               <AllowedTerm codeValue="RID28454" codeMeaning="none" codingSchemeDesignator="RadLex" codingSchemeVersion="1.0"/>
+            </ImagingObservationCharacteristic>
+         </ImagingObservation>
+         <AllowedTerm codeValue="C3262" codeMeaning="Neoplasm" codingSchemeDesignator="NCIT" codingSchemeVersion=""/>
+      </Component>
+      <Component label="Tumor measurement" itemNumber="2" authors="kirbyju" explanatoryText="Measure the longest diameter of the tumor with the ruler tool.  Then measure the longest perpendicular axis with the ruler tool.  Measure only the largest tumor in each case in the Nephrographic(?) phase." minCardinality="2" maxCardinality="2" shouldDisplay="true" groupLabel="" id="2.25.473378911436.143503203190.231237944989">
+         <GeometricShape>Polyline</GeometricShape>
+      </Component>
+   </Template>
+</TemplateContainer>
