@@ -44,7 +44,7 @@ var ids =0;
       $('select[class^="ui dropdown"]').dropdown();
       $('#selectF1AnatomicCenter').dropdown('setting', 'onChange', function(value){console.log(value);});
       $("#selectF3FunctionalBrainatRiskofResection").dropdown();
-       document.getElementById("quantileSelecta").width="300px";
+       
    });
      quantileSelecta.onchange = function (){
   $.getJSON("jsons/"+this.value, function(json) {
@@ -367,7 +367,10 @@ function AllowedTerm(parent, object,parentDiv){
               }
       });
       
- 
+            $('select[id^="select"]').dropdown();
+      $('select[class^="ui dropdown"]').dropdown();
+      $('#selectF1AnatomicCenter').dropdown('setting', 'onChange', function(value){console.log(value);});
+      $("#selectF3FunctionalBrainatRiskofResection").dropdown();
    console.log("*******************     Allowed Term---end                       **********************");
 }
 
