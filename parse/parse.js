@@ -8,7 +8,8 @@ var ids =0;
     var quantileSelecta = document.createElement('select');
     quantileDiva.id='Temp';
     quantileSelecta.id="S1";
-    quantileSelecta.className = 'Templist';
+
+    quantileSelecta.className = 'ui dropdown';
     quantileDiva.appendChild(quantileSelecta);
    // parentDiv.appendChild(quantileDiv);
     var quantileOptiona = document.createElement('option');
@@ -38,6 +39,13 @@ var ids =0;
      var lblTxt = document.createTextNode("Select template:");
     //document.getElementById('shape').appendChild(lblTxt);
      document.getElementById('tlist').appendChild(quantileSelecta);
+   $('document').ready(function(){
+           $('select[id^="select"]').dropdown();
+      $('select[class^="ui dropdown"]').dropdown();
+      $('#selectF1AnatomicCenter').dropdown('setting', 'onChange', function(value){console.log(value);});
+      $("#selectF3FunctionalBrainatRiskofResection").dropdown();
+       document.getElementById("quantileSelecta").width="300px";
+   });
      quantileSelecta.onchange = function (){
   $.getJSON("jsons/"+this.value, function(json) {
               document.getElementById('accordion1').innerHTML='';
@@ -253,10 +261,17 @@ function AllowedTerm(parent, object,parentDiv){
   var titleI = document.createElement('i');
   titleI.className = 'dropdown icon';
   var contentDiv = document.createElement('div');
+  //iconcav
+  var iconI = document.createElement('i');
+  iconI.className="red check circle outline icon";
+   
+  //iconcav
   contentDiv.className = 'content';
   contentDiv.id=maindiv;
    document.getElementById("accordion1").appendChild(uiAccordionDiv);  
     uiAccordionDiv.appendChild(titleDiv);
+    //icon cav
+    titleDiv.appendChild(iconI);
     titleDiv.appendChild(titleI);
     titleDiv.appendChild(lblTxt);
     uiAccordionDiv.appendChild(contentDiv);
@@ -352,10 +367,7 @@ function AllowedTerm(parent, object,parentDiv){
               }
       });
       
-      $('select[id^="select"]').dropdown();
-
-      $('#selectF1AnatomicCenter').dropdown('setting', 'onChange', function(value){console.log(value);});
-      $("#selectF3FunctionalBrainatRiskofResection").dropdown();
+ 
    console.log("*******************     Allowed Term---end                       **********************");
 }
 
@@ -536,7 +548,7 @@ console.log("*******************     ScaleLevel                *****************
 		var arrayLength = -1;
 		var quantileDiv = document.createElement('div');
 		var quantileSelect = document.createElement('select');
-		quantileSelect.className = 'mylbl';
+		quantileSelect.className = 'ui dropdown';
 		quantileDiv.appendChild(quantileSelect);
 		parentDiv.appendChild(quantileDiv);
     if (Array.isArray(object)){
@@ -582,7 +594,8 @@ function Numerical(parent, object, parentDiv){
     var arrayLength = -1;
 		var quantileDiv = document.createElement('div');
 		var quantileSelect = document.createElement('select');
-		quantileSelect.className = 'mylbl';
+    quantileSelect.className = 'ui dropdown';
+		
 		quantileDiv.appendChild(quantileSelect);
 		parentDiv.appendChild(quantileDiv);
     if (Array.isArray(object)){
@@ -648,7 +661,7 @@ function Quantile(parent, object, parentDiv){
                 }
                 var quantileDiv = document.createElement('div');
                 var quantileSelect = document.createElement('select');
-                quantileSelect.className = 'mylbl';
+                quantileSelect.className = 'ui dropdown';
                 var quantileOption = document.createElement('option');
                 quantileDiv.appendChild(quantileSelect);
                 quantileSelect.appendChild(quantileOption);
@@ -677,7 +690,8 @@ function Interval(parent, object, parentDiv){
     var subEObject= null;
     var intervalDiv = document.createElement('div');
     var intervalSelect = document.createElement('select');
-    intervalSelect.className = 'mylbl';
+    intervalSelect.className = 'ui dropdown';
+    
    
     intervalDiv.appendChild(intervalSelect);
     for (var i = 0 ; i<arrayLength;i++ ){
@@ -713,7 +727,7 @@ function NonQuantifiable(parent, object, parentDiv){
     var arrayLength = -1;
 		var quantileDiv = document.createElement('div');
 		var quantileSelect = document.createElement('select');
-		quantileSelect.className = 'mylbl';
+		quantileSelect.className = 'ui dropdown';
 		quantileDiv.appendChild(quantileSelect);
 		parentDiv.appendChild(quantileDiv);
     if (Array.isArray(object)){
