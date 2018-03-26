@@ -13,16 +13,15 @@
 
 </head>
 <body>
+  <div id="tlist"> </div> 
+  
   <div id="shape">
       <div>
-     <button type="button" onclick="checkAll();">Click Me!</button> 
-  </div>
+         <button type="button" onclick="checkAll();">Click Me!</button> 
+      </div>
 
   </div>
-<div id="accordion1" class="accordion1" style="background-color: white; width:400px;">
-
-	
-</div>
+<div id="accordion1" class="accordion1" style="background-color: white; width:400px;"></div>
 <div id="accordion2" class="ui container" ></div>
 
 
@@ -39,19 +38,6 @@
    
     <script>
     	
-    	$('.accordion1')
-  .accordion({
-    selector: {
-      trigger: '.title'
-    }
-  })
-;
 
-
-
-   $('select[id^="select"]').dropdown();
-
-$('#selectF1AnatomicCenter').dropdown('setting', 'onChange', function(value){console.log(value);});
-   $("#selectF3FunctionalBrainatRiskofResection").dropdown();
 
     </script>

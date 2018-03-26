@@ -2,11 +2,53 @@ var _out = this;
 var domelements  = [];
 var ar;
 var ids =0;
-$.getJSON("template.json", function(json) {
-	console.log("first json");
-  //console.log(json);
-    abcd(json);
-});
+
+    var arrayLength = -1;
+    var quantileDiva = document.createElement('div');
+    var quantileSelecta = document.createElement('select');
+    quantileDiva.id='Temp';
+    quantileSelecta.id="S1";
+    quantileSelecta.className = 'Templist';
+    quantileDiva.appendChild(quantileSelecta);
+   // parentDiv.appendChild(quantileDiv);
+    var quantileOptiona = document.createElement('option');
+    quantileOptiona.value = "ATS_Template.json"  ;
+    quantileOptiona.innerHTML = "ATS_Template.json"  ;
+    var quantileOptionb = document.createElement('option');
+    quantileOptionb.value = "BeaulieuBoneTemplate_rev13.json"  ;
+    quantileOptionb.innerHTML = "BeaulieuBoneTemplate_rev13.json"  ;
+    var quantileOptionc = document.createElement('option');
+    quantileOptionc.value = "coordinationTest.json"  ;
+    quantileOptionc.innerHTML = "coordinationTest.json"  ;
+    var quantileOptiond = document.createElement('option');
+    quantileOptiond.value = "Liver_Template_ePad_CFB_rev15.json"  ;
+    quantileOptiond.innerHTML = "Liver_Template_ePad_CFB_rev15.json"  ;
+    var quantileOptione = document.createElement('option');
+    quantileOptione.value = "LT.json"  ;
+    quantileOptione.innerHTML = "LT.json"  ;
+    var quantileOptionf = document.createElement('option');
+    quantileOptionf.value = "asdf.json"  ;
+    quantileOptionf.innerHTML = "asdf.json"  ;    
+    quantileSelecta.appendChild(quantileOptiona);
+    quantileSelecta.appendChild(quantileOptionb);
+    quantileSelecta.appendChild(quantileOptionc);
+    quantileSelecta.appendChild(quantileOptiond);
+    quantileSelecta.appendChild(quantileOptione);
+    quantileSelecta.appendChild(quantileOptionf);
+     var lblTxt = document.createTextNode("Select template:");
+    //document.getElementById('shape').appendChild(lblTxt);
+     document.getElementById('tlist').appendChild(quantileSelecta);
+     quantileSelecta.onchange = function (){
+  $.getJSON("jsons/"+this.value, function(json) {
+              document.getElementById('accordion1').innerHTML='';
+              document.getElementById('shape').innerHTML='';
+              console.log("first json");
+              extractTemplate(json);
+        });
+           
+     };
+            
+
 /*
 function createCollapseTitle(){
 
@@ -47,6 +89,7 @@ function createCollapseTitle(){
 
 };
 */
+/*
 function checkcardinality(){
   alert(a);
 
@@ -73,8 +116,8 @@ var createLabel = function(lblText){
   return label;
 }
 
-
-
+*/
+/*
 var sira = [];
 function abc(json){
           console.log(json);
@@ -108,11 +151,12 @@ function abc(json){
 
 	
 }
+*/
 var self = this;
-var myvar = "allowedTerm";
+//var myvar = "allowedTerm";
 
 
-function abcd(json){
+function extractTemplate(json){
   console.log(json);
   var subObject = null;
   var arrayLength = -1;
@@ -143,10 +187,8 @@ function abcd(json){
        
        
     }
-    
-
-
 }
+
 function QuestionType(parent, object, parentDiv){
   console.log("*******************     QuestionType                       **********************");
  
@@ -304,7 +346,16 @@ function AllowedTerm(parent, object,parentDiv){
           console.log("el el el ******");
           console.log("writing meaning : writing meaning between"+subEObject.codeMeaning);
       }
+            $('.accordion1').accordion({
+              selector: {
+                  trigger: '.title'
+              }
+      });
+      
+      $('select[id^="select"]').dropdown();
 
+      $('#selectF1AnatomicCenter').dropdown('setting', 'onChange', function(value){console.log(value);});
+      $("#selectF3FunctionalBrainatRiskofResection").dropdown();
    console.log("*******************     Allowed Term---end                       **********************");
 }
 
@@ -512,7 +563,7 @@ console.log("*******************     ScaleLevel                *****************
                 }
 
         var quantileOption = document.createElement('option');
-                quantileOption.innerHTML = subEObject.valueLabel  ;
+                quantileOption.innerHTML = subEObject.value  ;
 				
 				 quantileSelect.appendChild(quantileOption);
 				   
@@ -908,3 +959,27 @@ function checkAll(){
 
 
 }
+/*
+      document.ge$('.accordion1').accordion({
+              selector: {
+                  trigger: '.title'
+              }
+      });
+      
+      $('select[id^="select"]').dropdown();
+
+      $('#selectF1AnatomicCenter').dropdown('setting', 'onChange', function(value){console.log(value);});
+      $("#selectF3FunctionalBrainatRiskofResection").dropdown();
+*/
+      /*
+      $('.accordion1').accordion({
+              selector: {
+                  trigger: '.title'
+              }
+      });
+      
+      $('select[id^="select"]').dropdown();
+
+      $('#selectF1AnatomicCenter').dropdown('setting', 'onChange', function(value){console.log(value);});
+      $("#selectF3FunctionalBrainatRiskofResection").dropdown();
+      */
